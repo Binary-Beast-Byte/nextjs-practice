@@ -1,16 +1,17 @@
-import React, { useState } from 'react'
+import React from 'react'
+const { useState  }  = React
 
-
+import '../../src/app/globals.css'
+import { Button } from '@/components/Button'
 
 const about = ({ data }) => {
     const [clicked, setClicked] = useState<number>(0)
-    console.log("rendering in ............")
-    console.log("🚀 ~ file: index.tsx:17 ~ about ~ data:", data.slice(0, 1))
     return (
-        <div className='bg-green-500'>i am inside about page
-            <button onClick={() => setClicked(clicked + 1)} className='p-4 bg-gray-700 text-white'>
+        <div className='h-screen p-10'>
+            <Button className='bg-emerald-600 px-10 hover:bg-green-500'   onClick={() => setClicked(clicked + 1)} 
+            >
                 click me
-            </button>
+            </Button>
 
             {clicked}
         </div>

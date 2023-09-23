@@ -17,15 +17,15 @@ function CustomCarousel({ data }) {
     setGameDataSectionOne((prevData) => rollUpArray(prevData));
   }, []);
 
-//   useEffect(() => {
-//     if (!stopEffect) {
-//       const intervalId = setInterval(continuousFunction, 100);
+  useEffect(() => {
+    if (!stopEffect) {
+      const intervalId = setInterval(continuousFunction, 100);
 
-//       return () => {
-//         clearInterval(intervalId);
-//       };
-//     }
-//   }, [continuousFunction, stopEffect]);
+      return () => {
+        clearInterval(intervalId);
+      };
+    }
+  }, [continuousFunction, stopEffect]);
 
   const handleNext = () => {
     setStopEffect(true);

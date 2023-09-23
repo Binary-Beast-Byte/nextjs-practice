@@ -6,7 +6,7 @@ const page = () => {
   return (
     <div className="flex space-x-3">
     {items.map((item, index) => (
-        <div>
+        <div className='w-screen'>
             <CarouselCard index={index} key={index} />
         </div>
     //   <div className="item w-[200px] h-[200px] bg-blue-400 rounded shadow" key={index}>

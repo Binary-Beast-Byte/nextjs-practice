@@ -1,13 +1,30 @@
-.sliders0:hover {
-    margin-right: 20px !important;
+.slider--card-0:hover {
+    margin-right: 100px !important;
+    border: 2px solid red;
 }
 
-.sliders1:hover {
-    margin-right: 20px !important;
+.slider--card-1:hover {
+    margin-right: 300px !important;
+    border: 2px solid yellow;
+
+
 }
-.sliders2:hover {
-    margin-right: 20px !important;
+.slider--card-2:hover {
+    margin-left: 300px !important;
+    border: 2px solid rgb(20, 0, 240);
+
+
 }
-.sliders3:hover {
-    margin-right: 20px !important;
+
+.game-detail-carousel {
+    box-shadow: 0 0 5px 5px #555;
+    border-width: 6px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #95c5f4, #f853b6) 1;
+  }
+/* .slider--card-2:hover {
+    margin-right: 100px !important;
 }
+.slider--card-3:hover {
+    margin-right: 100px !important;
+} */

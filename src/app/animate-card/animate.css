@@ -1,4 +1,4 @@
-.item:nth-child(1) {
+/* .item:nth-child(1) {
         background: red !important;
         border: 2px solid red !important;
 }
@@ -17,17 +17,17 @@
 
 .item:nth-child(3):hover {
     margin-right: 30px;
-}
+} */
 
 .game--card-0:hover {
-    margin-right: 20px !important;
+    margin-right: 200px !important;  
 }
 
 .game--card-1:hover {
-    margin-right: 20px !important;
+    margin-right: 200px !important;
    }
   
    .game--card-2:hover {
-    margin-right: 20px !important;
+    margin-right: 200px !important;
    }
   

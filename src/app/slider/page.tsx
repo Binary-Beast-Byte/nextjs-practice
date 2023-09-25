@@ -10,7 +10,7 @@ const page = () => {
         { image: { key: "/images/5.jpg" }, slug: "item5" },
     ];
     return (
-        <div className='mt-[200px] px-12'>
+        <div className='mt-[200px] px-4'>
             <h1>Custom slider component</h1>
             <Slider images={sliderImages} slidesToShow={3} speed={10000} />
         </div>

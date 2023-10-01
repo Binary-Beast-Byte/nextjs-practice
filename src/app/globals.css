@@ -25,3 +25,27 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+swiper-container {
+  z-index: 0;
+}
+
+.swipes:not(:hover) {
+border: 1px solid red;
+margin-left: 50px;;
+}
+
+.swiper-wrapper {
+  z-index: 0 !important;
+}
+
+.swipes:hover {
+  border: 1px solid yellow;
+  translate: 20px;;
+  }
+
+  .swiper-slide-active {
+    border: 1px solid red;
+    margin-right: 100px !important;
+
+  }

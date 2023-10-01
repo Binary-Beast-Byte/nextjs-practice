@@ -1,5 +1,9 @@
+'use client'
+
 import Slider from '@/components/Slider/Slider';
-import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import { useState } from 'react';
 
 const page = () => {
     const sliderImages = [
@@ -9,11 +13,15 @@ const page = () => {
         { image: { key: "/images/4.jpg" }, slug: "item4" },
         { image: { key: "/images/5.jpg" }, slug: "item5" },
     ];
+
+    const [isHovered, seIsHovered] = useState(false)
     return (
-        <div className='mt-[200px] px-4'>
+        <div className='mt-[100px] px-12 overflow-x-hidden border w-ato'>
             <h1>Custom slider component</h1>
-            <Slider images={sliderImages} slidesToShow={3} speed={10000} />
+            <Slider images={sliderImages} slidesToShow={4} speed={5000} />
+           
         </div>
+
     )
 }
 
